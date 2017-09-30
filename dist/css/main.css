@@ -25,7 +25,8 @@ p {
 
 h2 {
   font-weight: 700;
-  font-size: 6.4rem; }
+  font-size: 5rem;
+  font-family: 'Oswald'; }
 
 ul {
   margin: 0; }
@@ -50,8 +51,9 @@ ul {
 
 nav a {
   color: #333;
-  font-weight: 500;
-  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'Oswald';
+  font-size: 1.75rem;
   margin-left: 36px;
   position: relative;
   text-transform: uppercase; }
@@ -82,9 +84,9 @@ nav a {
     -ms-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
   nav a.link-projects:before {
-    background-color: #2dcf6d; }
+    background-color: #ec637b; }
   nav a.link-about:before {
-    background-color: #ee4735; }
+    background-color: #007bff; }
 
 .summary {
   margin-top: 32px;
@@ -93,7 +95,7 @@ nav a {
 .works-section hr {
   margin: 0 0 40px; }
 .works-section h2 {
-  color: #2dcf6d; }
+  color: #ec637b; }
 
 .works-slider-wrapper {
   overflow: hidden;
@@ -160,7 +162,7 @@ nav a {
       -ms-transform: scale(1);
       transform: scale(1); }
   .carousel-arrow:hover {
-    color: #2dcf6d;
+    color: #ec637b;
     -webkit-transform: scale(1.4);
     -moz-transform: scale(1.4);
     -ms-transform: scale(1.4);
@@ -174,10 +176,10 @@ nav a {
   height: 8px;
   margin-right: 8px;
   border-radius: 100%;
-  border: 1px solid #2dcf6d;
+  border: 1px solid #ec637b;
   visibility: hidden; }
   .carousel-dot.current {
-    background-color: #2dcf6d; }
+    background-color: #ec637b; }
   .carousel-dot:last-child {
     margin-right: 0; }
 
@@ -186,15 +188,16 @@ nav a {
   .about-section hr {
     margin: 0 0 40px; }
   .about-section h2 {
-    color: #ee4735; }
+    color: #007bff; }
   .about-section .about-sentence {
     color: #333;
     font-size: 2rem;
     font-weight: 400; }
   .about-section h6 {
     font-size: 2rem;
-    font-weight: 700;
-    margin-top: 32px;
+    font-weight: 400;
+    margin: 48px 0 12px;
+    font-family: 'Oswald';
     text-transform: uppercase; }
   .about-section .skills-list {
     color: #333;

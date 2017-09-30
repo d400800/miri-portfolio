@@ -5,7 +5,7 @@
 		margin: 0 0 40px;
 	}
 	h2 {
-		color: $red;
+		color: $blue;
 	}
 	.about-sentence {
 		color: $black;
@@ -14,8 +14,9 @@
 	}
 	h6 {
 		font-size: 2rem;
-		font-weight: 700;
-		margin-top: 32px;
+		font-weight: 400;
+		margin: 48px 0 12px;
+		font-family: 'Oswald';
 		text-transform: uppercase;
 	}
 	.skills-list {

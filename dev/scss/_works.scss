@@ -3,7 +3,7 @@
 		margin: 0 0 40px;
 	}
 	h2 {
-		color: $green;
+		color: $pink;
 	}
 }
 
@@ -81,7 +81,7 @@
 		}
 	}
 	&:hover {
-		color: $green;
+		color: $pink;
 		@include css3-prefix(transform, scale(1.4));
 	}
 }
@@ -94,12 +94,12 @@
 	height: 8px;
 	margin-right: 8px;
 	border-radius: 100%;
-	border: 1px solid $green;
+	border: 1px solid $pink;
 
 	visibility: hidden;
 	
 	&.current {
-		background-color: $green;
+		background-color: $pink;
 	}
 
 	&:last-child {
