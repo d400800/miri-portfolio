@@ -27,6 +27,25 @@
 		img {
 			max-width: 100%;
 		}
+		a {
+			display: block;
+		}
+	}
+
+	@media(max-width: 1400px) {
+		.works-slider li {
+			width: 695px;
+		}
+	}
+	@media(max-width: 1200px) {
+		.works-slider li {
+			margin-right: 32px;
+		}
+	}
+	@media(max-width: 1024px) {
+		.works-slider li {
+			width: 500px;
+		}
 	}
 }
 
@@ -52,9 +71,18 @@
 	color: $black;
 	font-size: 2rem;
 	cursor: pointer;
+	@include css3-prefix(transition, all .25s);
 
 	&.inactive {
 		color: $lightgray;
+		&:hover {
+			color: $lightgray;
+			@include css3-prefix(transform, scale(1));
+		}
+	}
+	&:hover {
+		color: $green;
+		@include css3-prefix(transform, scale(1.4));
 	}
 }
 .carousel-arrow-left {
@@ -67,6 +95,8 @@
 	margin-right: 8px;
 	border-radius: 100%;
 	border: 1px solid $green;
+
+	visibility: hidden;
 	
 	&.current {
 		background-color: $green;

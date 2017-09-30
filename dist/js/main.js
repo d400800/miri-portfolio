@@ -9,7 +9,6 @@ $(document).ready(function() {
 	var worksSlider = $('.works-slider-wrapper');
 	worksSlider.css('width', worksSliderWidth+'px');1
 
-
 });
 
 

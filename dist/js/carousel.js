@@ -2,14 +2,18 @@
 
 	function Carousel(carousel) {
 		this.carousel = carousel.find(".works-slider");
+		
 		this.slideWidth = parseInt(this.carousel.find("li").outerWidth());
+		this.slideMarginRight = parseInt(this.carousel.find("li").css("marginRight"));
+		this.movingDistance = parseInt(this.slideWidth+this.slideMarginRight);
+		this.carouselWidth = parseInt(this.carousel.find("li").length * (this.movingDistance));
+		
 		this.carouselArrow = carousel.find(".carousel-arrow");
 		this.arrowRight = carousel.find(".carousel-arrow-right");
 		this.arrowLeft = carousel.find(".carousel-arrow-left");
-		this.carouselWidth = parseInt(this.carousel.find("li").length * this.slideWidth);
 
 		this.isMoving = false;
-
+		console.log(this.movingDistance);
 		this.bindEvents();
 	}
 
@@ -29,23 +33,23 @@
 		    	}
 		    	
 		    	if( $(this).hasClass("carousel-arrow-right") ) {
-		    		var newPos = pos-775;
+		    		var newPos = pos-self.movingDistance;
 		    	} else {
-		    		var newPos = pos+775;
+		    		var newPos = pos+self.movingDistance;
 		    	}
 		    	
 		    	console.log(newPos);
-
-		    	if(newPos == -(self.carouselWidth-self.slideWidth)) {
+		    	if(newPos == -(self.carouselWidth-self.movingDistance)) {
 		    		self.arrowRight.addClass("inactive");
-		    	} else if(newPos < 0 && newPos > -(self.carouselWidth-self.slideWidth)) {
+		    	} else if(newPos < 0 && newPos > -(self.carouselWidth-self.movingDistance)) {
 		    		self.arrowRight.removeClass("inactive");
 		    		self.arrowLeft.removeClass("inactive");
 		    	} else {
 		    		self.arrowLeft.addClass("inactive");
 		    	}
 
-		    	if (newPos < -(self.carouselWidth-self.slideWidth) || newPos > 0) {
+		    	if (newPos < -(self.carouselWidth-self.movingDistance) || newPos > 0) {
+		    	console.log("We are here");
 		    		self.isMoving = false;
 		    		return;
 		    	} else {

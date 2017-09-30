@@ -17,8 +17,8 @@
 			</div>
 			<div class="menu col-4 ml-auto">
 				<nav class="navigation nav flex-row-reverse">
-					<a href="#" class="link-about">About</a>
-					<a href="#" class="link-projects">Projects</a>
+					<a href="#" class="link-about" onclick="$('.about-section').animatescroll({scrollSpeed:1250});">About</a>
+					<a href="#" class="link-projects" onclick="$('.works-section').animatescroll({scrollSpeed:600});">Projects</a>
 				</nav>
 			</div>
 		</div>
@@ -43,13 +43,19 @@
 				<div class="works-slider-wrapper">
 					<ul class="works-slider">
 						<li>
-							<img src="img/holidays-square.png" alt="">
+							<a href="holidays.html">
+								<img src="img/holidays-square.png" alt="">
+							</a>
 						</li>
 						<li>
-							<img src="img/rb-square.png" alt="">
+							<a href="rolling-brew.html">
+								<img src="img/rb-square.png" alt="">
+							</a>
 						</li>
 						<li>
-							<img src="img/rhino-square.png" alt="">
+							<a href="rhino.html">
+								<img src="img/rhino-square.png" alt="">
+							</a>
 						</li>
 					</ul>
 
@@ -87,16 +93,17 @@
 			<div class="col-8 about-content">
 				<p class="about-sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum veniam sed autem debitis tempore reiciendis minus dolor cupiditate iste.</p>
 				<h6>Skills</h6>
-				<p class="skills-list">Adobe Photoshop, Adobe Illustrator, Adobe Flash</p>
+				<p class="skills-list">Adobe Photoshop | Adobe Illustrator | Adobe Flash</p>
 				
 				<hr>
 
-				<p>Email: <strong>mariya@gmail.com</strong></p>
+				<p>Email: <strong>vorobyova.mariya17@gmail.com</strong></p>
 			</div>
 		</div>
 	</section>
 
 	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="dist/js/animateScroll.js"></script>
 	<script src="dist/js/carousel.js"></script>
 	<script src="dist/js/main.js"></script>
 
