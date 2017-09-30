@@ -1,10 +1,15 @@
-console.log(`This is main.js`);
+$(document).ready(function() {
 
-$(document).ready(function(){
-	console.log($('.works-slider'));
-	$('.works-slider').slick({
-		infinite: false,
-		slidesToShow: 1,
-		slidesToScroll: 1
-	});
+	//setting slider width dinamically
+	var worksTitleCol = $(".works-title-col");
+	var worksTitleColOffset = worksTitleCol.offset().left;
+	var worksTitleColWidth = worksTitleCol.outerWidth();
+	var worksSliderWidth = parseInt($(window).width() - worksTitleColOffset - worksTitleColWidth);
+
+	var worksSlider = $('.works-slider-wrapper');
+	worksSlider.css('width', worksSliderWidth+'px');1
+
+
 });
+
+

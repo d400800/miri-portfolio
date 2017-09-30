@@ -6,6 +6,7 @@ html {
 
 body {
   font-weight: 300;
+  padding-bottom: 72px;
   font-family: 'Roboto', sans-serif; }
 
 hr {
@@ -26,7 +27,10 @@ h2 {
   font-weight: 700;
   font-size: 6.4rem; }
 
-.container, .container-fluid, .logo-wrapper, .menu, .row {
+ul {
+  margin: 0; }
+
+.container, .container-fluid, .logo-wrapper, .menu, .row, ul {
   padding: 0; }
 
 .row {
@@ -46,7 +50,38 @@ nav a {
   font-weight: 500;
   font-size: 1.4rem;
   margin-left: 36px;
+  position: relative;
   text-transform: uppercase; }
+  nav a:hover {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none; }
+    nav a:hover:before {
+      opacity: 1;
+      -webkit-transform: translate(-50%) scaleX(1);
+      -moz-transform: translate(-50%) scaleX(1);
+      -ms-transform: translate(-50%) scaleX(1);
+      transform: translate(-50%) scaleX(1); }
+  nav a:before {
+    content: '';
+    left: 50%;
+    opacity: 0;
+    width: 100%;
+    height: 4px;
+    bottom: -4px;
+    position: absolute;
+    -webkit-transform: translate(-50%) scaleX(0);
+    -moz-transform: translate(-50%) scaleX(0);
+    -ms-transform: translate(-50%) scaleX(0);
+    transform: translate(-50%) scaleX(0);
+    -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+  nav a.link-projects:before {
+    background-color: #2dcf6d; }
+  nav a.link-about:before {
+    background-color: #ee4735; }
 
 .summary {
   margin-top: 32px;
@@ -55,23 +90,85 @@ nav a {
 .works-section hr {
   margin: 0 0 40px; }
 .works-section h2 {
-  color: #2DCF6D; }
+  color: #2dcf6d; }
 
-.works-slider {
-  width: 1110px; }
+.works-slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 36px; }
+  .works-slider-wrapper .works-slider {
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+    .works-slider-wrapper .works-slider li {
+      width: 775px;
+      margin-right: 64px;
+      display: inline-block; }
+    .works-slider-wrapper .works-slider img {
+      max-width: 100%; }
 
-.works-title {
-  max-width: 14.5%; }
+.carousel-navigation {
+  margin: 1% 30% 0 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center; }
+  .carousel-navigation li, .carousel-navigation ul {
+    display: inline-block; }
 
-.slick-slide img {
-  max-height: 100%;
-  max-width: 100%; }
+.arrow-navigation {
+  text-align: right; }
 
-.slick-current {
-  margin-right: 64px;
-  width: 775px !important; }
+.carousel-arrow {
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer; }
+  .carousel-arrow.inactive {
+    color: #ddd; }
 
-.slick-slider .slick-track {
-  height: 775px; }
+.carousel-arrow-left {
+  margin-right: 16px; }
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 100%;
+  border: 1px solid #2dcf6d; }
+  .carousel-dot.current {
+    background-color: #2dcf6d; }
+  .carousel-dot:last-child {
+    margin-right: 0; }
+
+.about-section {
+  margin-top: 72px; }
+  .about-section hr {
+    margin: 0 0 40px; }
+  .about-section h2 {
+    color: #ee4735; }
+  .about-section .about-sentence {
+    color: #333;
+    font-size: 2rem;
+    font-weight: 400; }
+  .about-section h6 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 32px;
+    text-transform: uppercase; }
+  .about-section .skills-list {
+    color: #333;
+    font-size: 1.4rem; }
+  .about-section .about-content hr {
+    margin: 40px 0 24px; }
 
 /*# sourceMappingURL=main.css.map */

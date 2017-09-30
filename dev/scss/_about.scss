@@ -1,0 +1,30 @@
+.about-section {
+	margin-top: 72px;
+
+	hr {
+		margin: 0 0 40px;
+	}
+	h2 {
+		color: $red;
+	}
+	.about-sentence {
+		color: $black;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	h6 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-top: 32px;
+		text-transform: uppercase;
+	}
+	.skills-list {
+		color: $black;
+		font-size: 1.4rem;
+	}
+	.about-content {
+		hr {
+			margin: 40px 0 24px;
+		}
+	}
+}
