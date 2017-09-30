@@ -1,0 +1,48 @@
+html {
+  font-size: 10px; }
+
+body {
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif; }
+
+hr {
+  border: 0;
+  padding: 0;
+  width: 64px;
+  margin: 40px 0 0;
+  border-bottom: 8px solid #ddd; }
+
+strong {
+  color: #333;
+  font-weight: 500; }
+
+p {
+  color: #999; }
+
+.container, .logo-wrapper, .menu, .row {
+  padding: 0; }
+
+.row {
+  margin: 0; }
+
+.header {
+  margin: 40px auto 80px; }
+
+.logo-stub {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: #ddd; }
+
+nav a {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 36px;
+  text-transform: uppercase; }
+
+.summary {
+  margin-top: 32px;
+  font-size: 1.4rem; }
+
+/*# sourceMappingURL=main.css.map */

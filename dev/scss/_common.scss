@@ -1,0 +1,29 @@
+html {
+	font-size: 10px;
+}
+body {
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+hr {
+    border: 0;
+    padding: 0;
+	width: 64px;
+    margin: 40px 0 0;
+    border-bottom: 8px solid $lightgray;
+}
+strong {
+	color: $black;
+	font-weight: 500;
+}
+p {
+	color: $color-text;
+}
+
+.container, .logo-wrapper, .menu, .row {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}

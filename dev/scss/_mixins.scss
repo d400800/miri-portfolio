@@ -1,0 +1,10 @@
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+$black: #333;
+$lightgray: #ddd;
+$color-text: #999;

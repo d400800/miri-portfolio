@@ -1,0 +1,25 @@
+.header {
+	margin: 40px auto 80px;
+}
+
+.logo-stub {
+	width: 56px;
+	height: 56px;
+	border-radius: 100%;
+	background-color: #ddd;
+}
+
+nav {
+	a {
+		color: $black;
+		font-weight: 500;
+		font-size: 1.4rem;
+		margin-left: 36px;
+		text-transform: uppercase;
+	}
+}
+
+.summary {
+	margin-top: 32px;
+	font-size: 1.4rem;
+}
