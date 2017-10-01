@@ -77,8 +77,15 @@
 				});
 			}
 		})
+		
+		/* key navigation */
+		$("body").keydown(function(e) {
+		  if(e.keyCode == 39) self.arrowRight.click();
+		  if(e.keyCode == 37) self.arrowLeft.click();
+		});
 	}
 
 	var myCarousel = new Carousel($(".carousel-slider-wrapper"));
+
 
 })();
