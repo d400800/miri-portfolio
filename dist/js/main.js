@@ -6,8 +6,8 @@ $(document).ready(function() {
 	var worksTitleColWidth = worksTitleCol.outerWidth();
 	var worksSliderWidth = parseInt($(window).width() - worksTitleColOffset - worksTitleColWidth);
 
-	var worksSlider = $('.works-slider-wrapper');
-	worksSlider.css('width', worksSliderWidth+'px');1
+	var worksSlider = $('.works-slider');
+	worksSlider.css('width', worksSliderWidth+'px');
 
 });
 

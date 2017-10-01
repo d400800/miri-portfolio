@@ -7,12 +7,12 @@
 	}
 }
 
-.works-slider-wrapper {
+.carousel-slider-wrapper {
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 36px;
 
-	.works-slider {
+	.carousel-slider {
 		padding: 0;
 		list-style: none;
 		white-space: nowrap;
@@ -33,17 +33,17 @@
 	}
 
 	@media(max-width: 1400px) {
-		.works-slider li {
+		.carousel-slider li {
 			width: 695px;
 		}
 	}
 	@media(max-width: 1200px) {
-		.works-slider li {
+		.carousel-slider li {
 			margin-right: 32px;
 		}
 	}
 	@media(max-width: 1024px) {
-		.works-slider li {
+		.carousel-slider li {
 			width: 500px;
 		}
 	}
