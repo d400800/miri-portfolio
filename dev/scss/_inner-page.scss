@@ -1,0 +1,65 @@
+.inner-page {
+	
+	header {
+		height: 550px;
+		padding-top: 45px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("../../img/holidays/holidays-banner.png");
+
+		.header {
+			margin: 0 auto;
+		}
+		nav a {
+			color: white;
+		}
+	}
+	.carousel-slider-wrapper {
+		margin-top: 16px;
+
+		.carousel-slider {
+			@include css3-prefix(transition, all .65s);
+
+			li {
+				margin-right: 0;
+			}
+		}
+	}
+	.carousel-navigation {
+		margin: 16px 32px 16px 0;
+	}
+}
+
+.project-desc {
+	h2 {
+		color: $pink;
+		margin: 24px 0 120px;
+	}
+	h3 {
+		color: $black;
+		margin-bottom: 24px;
+	}
+	p {
+		color: $black;
+		font-weight: 300;
+		font-size: 1.8rem;
+	}
+}
+
+.project-summary {
+	h4 {
+		margin-bottom: 32px;
+
+	}
+	p {
+		font-size: 1.6rem;
+		margin-bottom: 4px;
+	}
+	hr {
+		width: 100%;
+		margin: 64px 0 12px;
+	}
+	a {
+		cursor: pointer;
+	}
+}

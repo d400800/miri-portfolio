@@ -1,0 +1,109 @@
+.carousel-slider-wrapper {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 36px;
+
+	.carousel-slider {
+		padding: 0;
+		flex-wrap: no-wrap;
+		list-style: none;
+		white-space: nowrap;
+		@include css3-prefix(transition, all 1s);
+		@include css3-prefix(transform, translateX(0));
+
+		li {
+			float: left;
+			cursor: pointer;
+			margin-right: 64px;
+			display: inline-block;
+		}
+		img {
+			max-width: 100%;
+		}
+		a {
+			display: block;
+		}
+		&:after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+	}
+
+	@media(max-width: 1400px) {
+		.carousel-slider li {
+			width: 695px;
+		}
+	}
+	@media(max-width: 1200px) {
+		.carousel-slider li {
+			margin-right: 32px;
+		}
+	}
+	@media(max-width: 1024px) {
+		.carousel-slider li {
+			width: 500px;
+		}
+	}
+}
+
+.carousel-navigation {
+    margin: 1% 30% 0 0;
+	display: -ms-flexbox;
+		display: flex;
+	-ms-flex-pack: justify;
+    	justify-content: space-between;
+    -ms-flex-align: center;
+    	align-items: center;
+    -ms-flex-direction: row-reverse;
+    	flex-direction: row-reverse;
+
+    li, ul {
+    	display: inline-block;
+    }
+}
+
+.arrow-navigation {
+	text-align: right;
+}
+
+.carousel-arrow {
+	fill: $black;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	@include css3-prefix(transition, all .25s);
+
+	&.inactive {
+		fill: $lightgray;
+		&:hover {
+			fill: $lightgray;
+			@include css3-prefix(transform, scale(1));
+		}
+	}
+	&:hover {
+		fill: $pink;
+		@include css3-prefix(transform, scale(1.4));
+	}
+}
+.carousel-arrow-left {
+	margin-right: 16px;
+}
+
+.carousel-dot {
+	width: 8px;
+	height: 8px;
+	margin-right: 8px;
+	border-radius: 100%;
+	border: 1px solid $pink;
+
+	visibility: hidden;
+	
+	&.current {
+		background-color: $pink;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}

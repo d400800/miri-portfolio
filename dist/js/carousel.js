@@ -8,18 +8,27 @@
 		disabled:'inactive'
 	}
 
-	function Carousel(carousel) {
+	function Carousel(carousel, transitionTime) {
 		this.carousel = carousel.find("."+CLASSES.carouselSlider);
+		this.slides = this.carousel.find("li");
 		this.carouselArrow = carousel.find("."+CLASSES.arrow);
 		this.arrowRight = carousel.find("."+CLASSES.arrowRight);
 		this.arrowLeft = carousel.find("."+CLASSES.arrowLeft);
+		this.transitionTime = transitionTime;
 		
+		this.carouselWrapperWidth = carousel.outerWidth();
+		console.log(this.carouselWrapperWidth);
+
+		this.slides.css('width', this.carouselWrapperWidth+'px');
+
 		this.slideWidth = parseInt(this.carousel.find("li").outerWidth());
 		this.slideMarginRight = parseInt(this.carousel.find("li").css("marginRight"));
 		this.movingDistance = parseInt(this.slideWidth+this.slideMarginRight);
 		this.carouselWidth = parseInt(this.carousel.find("li").length * (this.movingDistance));
 		this.isMoving = false;
 
+		this.carousel.css('width', this.carouselWidth+'px');
+		
 		this.bindEvents();
 	}
 
@@ -70,7 +79,7 @@
 				      $(this).css('-ms-transform','translateX'+newPos+'px)');
 				      $(this).css('transform','translateX('+newPos+'px)');
 				    },
-				    duration: 1000,
+				    duration: self.transitionTime,
 				    complete: function() {
 				    	self.isMoving = false;
 				    }
@@ -85,7 +94,15 @@
 		});
 	}
 
-	var myCarousel = new Carousel($(".carousel-slider-wrapper"));
-
+	$(document).ready(function() {
+		if($(".homepage").length > 0) {
+			console.log("lalal");
+			var homepageSlider = new Carousel($(".carousel-slider-wrapper"), 1000);
+		}
+		if($(".inner-page").length > 0) {
+			var brandingSlider = new Carousel($(".branding-slider"), 650);
+			var brandingSlider = new Carousel($(".website-design-slider"), 650);
+		}
+	})
 
 })();
