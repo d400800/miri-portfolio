@@ -1,25 +1,24 @@
 {
   "name": "miri_portfolio",
   "version": "1.0.0",
-  "description": "Miriam Lyubarov portfolio website",
-  "main": "index.js",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "bootstrap": "^4.0.0-beta",
-    "ejs": "^2.5.7",
-    "express": "^4.16.1",
-    "jade": "^1.11.0",
-    "jquery": "^3.2.1",
-    "morgan": "^1.9.0",
-    "nodemon": "^1.9.2",
-    "path": "^0.12.7",
-    "popper.js": "^1.12.5",
-    "stylus": "^0.54.5"
-  },
-  "devDependencies": {},
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d400800/miri-portfolio.git"
+  },
+  "author": "Benjamin Mordukhovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d400800/miri-portfolio/issues"
+  },
+  "homepage": "https://github.com/d400800/miri-portfolio#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
 }

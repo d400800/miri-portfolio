@@ -76,8 +76,22 @@ ul {
     .carousel-slider-wrapper .carousel-slider li {
       float: left;
       cursor: pointer;
+      position: relative;
       margin-right: 64px;
       display: inline-block; }
+      .carousel-slider-wrapper .carousel-slider li strong {
+        left: 50%;
+        color: #aaa;
+        bottom: -30px;
+        font-weight: 300;
+        text-align: center;
+        position: absolute;
+        font-size: 1.5rem;
+        display: inline-block;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
     .carousel-slider-wrapper .carousel-slider img {
       max-width: 100%; }
     .carousel-slider-wrapper .carousel-slider a {
@@ -241,7 +255,8 @@ nav a {
   .inner-page header nav a {
     color: white; }
 .inner-page .carousel-slider-wrapper {
-  margin-top: 16px; }
+  margin-top: 16px;
+  margin-bottom: 0; }
   .inner-page .carousel-slider-wrapper .carousel-slider {
     -webkit-transition: all 0.65s;
     -moz-transition: all 0.65s;
@@ -254,7 +269,8 @@ nav a {
 
 .project-desc h2 {
   color: #ec637b;
-  margin: 24px 0 120px; }
+  margin: 24px 0 120px;
+  text-transform: uppercase; }
 .project-desc h3 {
   color: #333;
   margin-bottom: 24px; }
@@ -262,6 +278,8 @@ nav a {
   color: #333;
   font-weight: 300;
   font-size: 1.8rem; }
+.project-desc hr {
+  margin-top: 84px; }
 
 .project-summary h4 {
   margin-bottom: 32px; }

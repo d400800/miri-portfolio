@@ -14,8 +14,21 @@
 		li {
 			float: left;
 			cursor: pointer;
+			position: relative;
 			margin-right: 64px;
 			display: inline-block;
+
+			strong {
+				left: 50%;
+			    color: #aaa;
+				bottom: -30px;
+			    font-weight: 300;
+				text-align: center;
+				position: absolute;
+				font-size: 1.5rem;
+				display: inline-block;
+				@include css3-prefix(transform, translateX(-50%));
+			}
 		}
 		img {
 			max-width: 100%;
