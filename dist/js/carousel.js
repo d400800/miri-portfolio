@@ -5,7 +5,8 @@
 		arrow:'carousel-arrow',
 		arrowRight:'carousel-arrow-right',
 		arrowLeft:'carousel-arrow-left',
-		disabled:'inactive'
+		disabled:'inactive',
+		navContainer: 'carousel-navigation'
 	}
 
 	function Carousel(carousel, transitionTime) {
@@ -14,12 +15,14 @@
 		this.carouselArrow = carousel.find("."+CLASSES.arrow);
 		this.arrowRight = carousel.find("."+CLASSES.arrowRight);
 		this.arrowLeft = carousel.find("."+CLASSES.arrowLeft);
+		this.navContainer = carousel.find("."+CLASSES.navContainer);
 		this.transitionTime = transitionTime;
 		
 		this.carouselWrapperWidth = carousel.outerWidth();
 		console.log(this.carouselWrapperWidth);
 
 		this.slides.css('width', this.carouselWrapperWidth+'px');
+		this.navContainer.css('width', this.carouselWrapperWidth+'px');
 
 		this.slideWidth = parseInt(this.carousel.find("li").outerWidth());
 		this.slideMarginRight = parseInt(this.carousel.find("li").css("marginRight"));

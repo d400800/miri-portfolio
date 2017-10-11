@@ -13,7 +13,6 @@
 
 		li {
 			float: left;
-			cursor: pointer;
 			position: relative;
 			margin-right: 64px;
 			display: inline-block;
@@ -35,6 +34,7 @@
 		}
 		a {
 			display: block;
+			cursor: pointer;
 		}
 		&:after {
 			content: '';
@@ -61,7 +61,7 @@
 }
 
 .carousel-navigation {
-    margin: 1% 30% 0 0;
+    margin-top: 1%;
 	display: -ms-flexbox;
 		display: flex;
 	-ms-flex-pack: justify;
