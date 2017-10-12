@@ -248,8 +248,7 @@ nav a {
   height: 550px;
   padding-top: 45px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../../img/holidays/holidays-banner.png"); }
+  background-repeat: no-repeat; }
   .inner-page header .header {
     margin: 0 auto; }
   .inner-page header nav a {

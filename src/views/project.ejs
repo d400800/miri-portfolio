@@ -11,7 +11,7 @@
 </head>
 <body class="inner-page">
 	
-	<header>
+	<header style="background-image: url(/img/<%=project.banner %>);">
 		<section class="container header">
 			<div class="row align-items-center">
 				<div class="logo-wrapper col-2">
@@ -41,7 +41,7 @@
 				</h2>
 
 				<h3>Introduction</h3>
-				<p><%=project.introText %></p>
+				<p><%-project.introText %></p>
 			</div>
 
 			<% project.sliders.forEach(function(slider) { %>
@@ -81,14 +81,14 @@
 			
 			<div class="col-10 project-desc ml-auto project-summary">
 				<h4 class="margin-t-120">Summary</h3>
-				<p><strong>Year of release: </strong><span>2017</span></p>
-				<p><strong>My role in the project: </strong><span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span></p>
+				<p><strong>Year of release: </strong><span><%=project.summary.year %></span></p>
+				<p><strong>My role in the project: </strong><span><%=project.summary.myRole %></span></p>
 
 				<hr>
 
 				<p><strong>Next project</p></strong>
 				<h2>
-					<a href="#">Rolling Brew</a>
+					<a href="/project/<%=nextProjectId %>"><%=nextProject.heading %></a>
 				</h2>
 			</div>
 
