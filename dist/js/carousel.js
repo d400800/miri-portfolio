@@ -19,7 +19,6 @@
 		this.transitionTime = transitionTime;
 		
 		this.carouselWrapperWidth = carousel.outerWidth();
-		console.log(this.carouselWrapperWidth);
 
 		this.slides.css('width', this.carouselWrapperWidth+'px');
 		this.navContainer.css('width', this.carouselWrapperWidth+'px');
