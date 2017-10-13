@@ -9,6 +9,14 @@
 	background-color: #ddd;
 }
 
+.site-logo {
+	width: 72px;
+	display: inline-block;
+	img {
+		width: 100%;
+	}
+}
+
 nav {
 	a {
 		color: $black;

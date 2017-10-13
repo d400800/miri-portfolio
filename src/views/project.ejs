@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Miri's Portfolio - Holidays</title>
+
+	<title>Miri's Portfolio - <%=project.heading; %></title>
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body class="inner-page">
 	
 	<header style="background-image: url(/img/<%=project.banner %>);">
 		<section class="container header">
 			<div class="row align-items-center">
 				<div class="logo-wrapper col-2">
-					<div class="logo-stub"></div>
+					<a href="/" class="site-logo" title="homepage">
+						<img src="/img/logo.png" alt="logo">
+					</a>
 				</div>
 				<div class="menu col-4 ml-auto">
 					<nav class="navigation nav flex-row-reverse">
-						<a href="#" class="link-about" onclick="$('.about-section').animatescroll({scrollSpeed:1250});">About</a>
-						<a href="#" class="link-projects" onclick="$('.works-section').animatescroll({scrollSpeed:600});">Projects</a>
+						<a href="#" class="link-about">About</a>
+						<a href="#" class="link-projects">Projects</a>
 					</nav>
 				</div>
 			</div>
@@ -98,7 +103,6 @@
 	</section>
 
 	<script src="/js/jquery.js"></script>
-	<script src="/js/animateScroll.js"></script>
 	<script src="/js/carousel.js"></script>
 	<script src="/js/main.js"></script>
 

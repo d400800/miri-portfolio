@@ -1,16 +1,10 @@
 var express = require('express');
 var projectsRouter = express.Router();
-var projects = require('../projects');
+var projects = require('../stubs/projects');
 
 function getNextProject(id) {
-	var nextProjectId = 0;
-	var currentId = parseInt(id);
-	if (currentId == projects.length-1) {
-		nextProjectId = 0;
-	}
-	else {
-		nextProjectId = currentId+1;
-	}
+	var nextProjectId;
+	nextProjectId = (parseInt(id) == projects.length-1) ? 0 : parseInt(id)+1;
 	return nextProjectId;
 
 }

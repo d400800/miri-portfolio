@@ -1,6 +1,7 @@
 var express = require('express');
-
 var config = require('./config');
+var projects = require('./src/stubs/projects');
+
 var port = config.port;
 
 var app = express();
@@ -15,7 +16,7 @@ app.use('/project', projectsRouter);
 app.use('/Admin', adminRouter);
 
 app.get('/', function(req, res) {
-	res.render("index");
+	res.render("index", {projects: projects});
 })
 
 app.listen(port, function(err) {

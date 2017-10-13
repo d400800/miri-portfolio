@@ -3,6 +3,7 @@ var projects = [
 		banner: "holidays/holidays-banner.png",
 		heading: "holidays",
 		headingHebrew: "מסבירים חגים",
+		homepageSlide: "holidays/holidays-square.png",
 		summary: {
 			year: 2017,
 			myRole: "Lorem ipsum dolor sit amet, consectetur adipisicing."
@@ -58,6 +59,7 @@ var projects = [
 	{
 		banner: "rolling_brew/rb-banner.png",
 		heading: "rolling brew",
+		homepageSlide: "rolling_brew/rb-square.png",
 		summary: {
 			year: 2017,
 			myRole: "Lorem ipsum dolor sit amet, consectetur adipisicing."
@@ -113,6 +115,7 @@ var projects = [
 	{
 		banner: "rhino/rhino-banner.png",
 		heading: "rhino bar",
+		homepageSlide: "rhino/rhino-square.png",
 		summary: {
 			year: 2017,
 			myRole: "Lorem ipsum dolor sit amet, consectetur adipisicing."

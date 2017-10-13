@@ -13,7 +13,9 @@
 	<section class="container header">
 		<div class="row align-items-center">
 			<div class="logo-wrapper col-2">
-				<div class="logo-stub"></div>
+				<a href="/" class="site-logo" title="homepage">
+					<img src="/img/logo.png" alt="logo">
+				</a>
 			</div>
 			<div class="menu col-4 ml-auto">
 				<nav class="navigation nav flex-row-reverse">
@@ -39,24 +41,18 @@
 				<h2>PROJECTS</h2>
 			</div>
 
-			<div class="col-8">
+			<div class="col-7">
+				
 				<div class="carousel-slider-wrapper works-slider">
 					<ul class="carousel-slider">
-						<li>
-							<a href="/project/0">
-								<img src="img/holidays-square.png" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="/project/1">
-								<img src="img/rb-square.png" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="/project/2">
-								<img src="img/rhino-square.png" alt="">
-							</a>
-						</li>
+						
+						<% projects.forEach(function(project, index) { %>
+							<li>
+								<a href="/project/<%=index%>" title="<%=project.heading %>">
+									<img src="/img/<%=project.homepageSlide %>" alt="<%=project.heading %>" title="<%=project.heading %>">
+								</a>
+							</li>
+						<%})%>
 					</ul>
 
 					<div class="carousel-navigation">
