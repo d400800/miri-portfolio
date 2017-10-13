@@ -5,7 +5,6 @@
 		padding-top: 45px;
 		background-position: center;
 		background-repeat: no-repeat;
-		//background-image: url("../../img/holidays/holidays-banner.png");
 
 		.header {
 			margin: 0 auto;
@@ -66,5 +65,33 @@
 	}
 	a {
 		cursor: pointer;
+	}
+}
+
+@media(max-width: 576px) {
+	.inner-page {
+		header {
+			height: 200px;
+			padding: 12px 12px 0;
+			background-size: cover;
+			
+		}
+		.carousel-navigation {
+			padding-right: 20px;
+			-ms-flex-pack: justify;
+	    		justify-content: space-between;
+		}
+		.carousel-slider-wrapper .carousel-slider li strong {
+			left: 0;
+			@include css3-prefix(transform, translateX(0));
+		}
+	}
+	.project-desc {
+		hr {
+			margin-top: 32px;
+		}
+		h2 {
+			margin-bottom: 42px;
+		}
 	}
 }

@@ -61,3 +61,12 @@ nav {
 	margin-top: 32px;
 	font-size: 1.4rem;
 }
+
+@media(max-width: 576px) {
+	.header {
+		margin: 12px auto 64px;
+	}
+	.site-logo {
+		width: 42px;
+	}
+}

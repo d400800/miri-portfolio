@@ -56,10 +56,36 @@ ul {
 
 .margin-t-120 {
 	margin-top: 120px;
+	@media(max-width: 567px) {
+		margin-top: 52px;
+	}
+}
+
+.inner-page .menu {
+	display: none;
 }
 
 @media(max-width: 1024px) {
 	h2 {
 		font-size: 4rem;
+	}
+}
+
+
+
+@media(max-width: 576px) {
+	html {
+		font-size: 8px;
+	}
+	.homepage {
+		padding: 0 12px;
+	}
+	.inner-page {
+		.container:not(.header) {
+			padding: 0 12px;
+		}
+	}
+	hr {
+		margin-top: 24px;
 	}
 }

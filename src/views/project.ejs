@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Miri's Portfolio - <%=project.heading; %></title>
 
@@ -35,7 +36,7 @@
 	<section class="container">
 		
 		<div class="row justify-content-center">
-			<div class="col-8 project-desc">
+			<div class="col-12 col-sm-8 project-desc">
 				<hr>
 
 				<h2>
@@ -50,7 +51,7 @@
 			</div>
 
 			<% project.sliders.forEach(function(slider) { %>
-				<div class="col-10 project-desc ml-auto">
+				<div class="col-12 col-sm-10 project-desc ml-auto">
 					<h3 class="margin-t-120"><%=slider.sliderHeading %></h3>
 				</div>
 
@@ -84,7 +85,7 @@
 
 			<%})%>
 			
-			<div class="col-10 project-desc ml-auto project-summary">
+			<div class="col-12 col-sm-10 project-desc ml-auto project-summary">
 				<h4 class="margin-t-120">Summary</h3>
 				<p><strong>Year of release: </strong><span><%=project.summary.year %></span></p>
 				<p><strong>My role in the project: </strong><span><%=project.summary.myRole %></span></p>

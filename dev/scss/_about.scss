@@ -28,4 +28,9 @@
 			margin: 40px 0 24px;
 		}
 	}
+	@media(max-width: 576px) {
+		hr {
+			margin-bottom: 12px;
+		}
+	}
 }

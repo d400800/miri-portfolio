@@ -5,4 +5,12 @@
 	h2 {
 		color: $pink;
 	}
+	@media(max-width: 576px) {
+		hr {
+			margin-bottom: 12px;
+		}
+		.works-title-col {
+			margin-bottom: 24px;
+		}
+	}
 }

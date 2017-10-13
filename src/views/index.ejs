@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Miri's Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet'>
@@ -12,12 +14,12 @@
 	
 	<section class="container header">
 		<div class="row align-items-center">
-			<div class="logo-wrapper col-2">
+			<div class="logo-wrapper col-2 col-sm-2">
 				<a href="/" class="site-logo" title="homepage">
 					<img src="/img/logo.png" alt="logo">
 				</a>
 			</div>
-			<div class="menu col-4 ml-auto">
+			<div class="menu col-8 col-sm-4 ml-auto">
 				<nav class="navigation nav flex-row-reverse">
 					<a href="#" class="link-about" onclick="$('.about-section').animatescroll({scrollSpeed:1250});">About</a>
 					<a href="#" class="link-projects" onclick="$('.works-section').animatescroll({scrollSpeed:600});">Projects</a>
@@ -36,12 +38,12 @@
 
 	<section class="works-section container">
 		<div class="row">
-			<div class="col-4 works-title-col">
+			<div class="col-12 col-sm-4 works-title-col">
 				<hr>
 				<h2>PROJECTS</h2>
 			</div>
 
-			<div class="col-7">
+			<div class="col-12 col-sm-7">
 				
 				<div class="carousel-slider-wrapper works-slider">
 					<ul class="carousel-slider">
@@ -76,11 +78,11 @@
 
 	<section class="about-section container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-12 col-sm-4">
 				<hr>
 				<h2>ABOUT</h2>
 			</div>
-			<div class="col-8 about-content">
+			<div class="col-12 col-sm-8 about-content">
 				<p class="about-sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum veniam sed autem debitis tempore reiciendis minus dolor cupiditate iste.</p>
 				<h6>Skills</h6>
 				<p class="skills-list">Adobe Photoshop | Adobe Illustrator | Adobe Animate</p>

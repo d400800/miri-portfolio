@@ -74,6 +74,12 @@
     li, ul {
     	display: inline-block;
     }
+
+    @media(max-width: 576px) {
+    	margin-top: 5%;
+    	-ms-flex-pack: center;
+    		justify-content: center;
+    }
 }
 
 .arrow-navigation {
@@ -98,6 +104,9 @@
 		fill: $pink;
 		@include css3-prefix(transform, scale(1.4));
 	}
+	@media(max-width: 576px) {
+    	width: 28px;
+    }
 }
 .carousel-arrow-left {
 	margin-right: 16px;
