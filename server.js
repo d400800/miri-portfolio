@@ -1,15 +1,19 @@
 var express = require('express');
-var config = require('./config');
-var projects = require('./src/stubs/projects');
+var path = require('path');
+
+var config = require(path.join(__dirname, './config'));
+var projects = require(path.join(__dirname, './src/stubs/projects'));
 
 var port = config.port;
 
 var app = express();
-var projectsRouter = require('./src/routes/projectsRouter')();
-var adminRouter = require('./src/routes/adminRouter')();
 
-app.use(express.static('dist'));
-app.set('views', './src/views')
+var projectsRouter = require(path.join(__dirname, './src/routes/projectsRouter'))();
+var adminRouter = require(path.join(__dirname, './src/routes/adminRouter'))();
+
+app.use(express.static(path.join(__dirname, './dist')));
+app.set('views', path.join(__dirname, './src/views'));
+
 app.set('view engine', 'ejs');
 
 app.use('/project', projectsRouter);
