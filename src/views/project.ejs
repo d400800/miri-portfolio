@@ -47,7 +47,7 @@
 				</h2>
 
 				<h3>Introduction</h3>
-				<p><%-project.introText %></p>
+				<%-project.introText %>
 			</div>
 
 			<% project.sliders.forEach(function(slider) { %>
@@ -89,6 +89,9 @@
 				<h4 class="margin-t-120">Summary</h3>
 				<p><strong>Year of release: </strong><span><%=project.summary.year %></span></p>
 				<p><strong>My role in the project: </strong><span><%=project.summary.myRole %></span></p>
+				<% if(project.summary.webDevelopment) {%>
+					<p><strong>Web development: </strong><span><%=project.summary.webDevelopment %></span></p>
+				<%}%>
 
 				<hr>
 

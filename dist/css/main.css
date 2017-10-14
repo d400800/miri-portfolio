@@ -322,7 +322,10 @@ nav a {
 .project-desc p {
   color: #333;
   font-weight: 300;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  margin-bottom: 24px; }
+  .project-desc p:last-child {
+    margin-bottom: 0; }
 .project-desc hr {
   margin-top: 84px; }
 

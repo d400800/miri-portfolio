@@ -44,6 +44,11 @@
 		color: $black;
 		font-weight: 300;
 		font-size: 1.8rem;
+		margin-bottom: 24px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 	hr {
 		margin-top: 84px;
