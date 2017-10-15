@@ -206,15 +206,15 @@ var projects = [
 						src: "galla/galla-home-1920-1.png"
 					},
 					{
-						imgTitle: "Homepage",
+						imgTitle: "Homepage - Our Instagram",
 						src: "galla/galla-home-1920-2.png"
 					},
 					{
-						imgTitle: "Homepage",
+						imgTitle: "Homepage - About us, Trending, Blog, Our Instagram",
 						src: "galla/galla-home-1920-3.png"
 					},
 					{
-						imgTitle: "homepage and menu - mobile app",
+						imgTitle: "Homepage and menu - mobile app",
 						src: "galla/galla-mobile-1.png"
 					},
 					{
