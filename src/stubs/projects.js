@@ -86,6 +86,10 @@ var projects = [
 					{
 						imgTitle: "icons",
 						src: "rolling_brew/rb-icons.png"
+					},
+					{
+						imgTitle: "mockup - paper cups",
+						src: "rolling_brew/rb-cup.png"
 					}
 				]
 			},
@@ -160,6 +164,74 @@ var projects = [
 					{
 						imgTitle: "Rhino T-shirts",
 						src: "rhino/rhino-tshirts.png"
+					}
+				]
+			}
+		]
+	},
+	{
+		banner: "galla/galla-banner.png",
+		heading: "galla",
+		homepageSlide: "galla/galla-square.png",
+		summary: {
+			year: 2017,
+			myRole: "branding, web design"
+		},
+		introText: "<p>Galla New York is a concept of an online accessories shop. A team of talented designers, fashion experts and jewelers gathered to create great accessories from simple plastic earrings to jewelry with precious stones and luxuries watches.</p><p>Galla online shop offers top quality and unique goods with free international shipping, secure online payment and pay back services.</p>",
+		sliders: [
+			{
+				sliderHeading: "Branding and typography",
+				sliderClass: "branding-slider",
+				slides: [
+					{
+						imgTitle: "GALLA New York Logo",
+						src: "galla/galla-logo.png"
+					},
+					{
+						imgTitle: "typography",
+						src: "galla/galla-typography.png"
+					},
+					{
+						imgTitle: "colors",
+						src: "galla/galla-colors.png"
+					}
+				]
+			},
+			{
+				sliderHeading: "Web design and app",
+				sliderClass: "website-design-slider",
+				slides: [
+					{
+						imgTitle: "homepage",
+						src: "galla/galla-home-1920-1.png"
+					},
+					{
+						imgTitle: "homepage",
+						src: "galla/galla-home-1920-2.png"
+					},
+					{
+						imgTitle: "homepage",
+						src: "galla/galla-home-1920-3.png"
+					},
+					{
+						imgTitle: "homepage and menu - mobile app",
+						src: "galla/galla-mobile-1.png"
+					},
+					{
+						imgTitle: "category page - jewelry",
+						src: "galla/galla-categories-1920-1.png"
+					},
+					{
+						imgTitle: "mockup - category page - jewelry",
+						src: "galla/galla-categories-1920-2.png"
+					},
+					{
+						imgTitle: "product page - desktop & mobile",
+						src: "galla/galla-product-page.png"
+					},
+					{
+						imgTitle: "shopping cart",
+						src: "galla/galla-shopping-cart.png"
 					}
 				]
 			}

@@ -60,6 +60,10 @@ nav {
 .summary {
 	margin-top: 32px;
 	font-size: 1.4rem;
+
+	p {
+		margin-bottom: 0;
+	}
 }
 
 @media(max-width: 576px) {

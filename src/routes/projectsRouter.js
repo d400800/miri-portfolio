@@ -2,11 +2,10 @@ var express = require('express');
 var projectsRouter = express.Router();
 var projects = require('../stubs/projects');
 
-function getNextProject(id) {
+var getNextProject = function(id) {
 	var nextProjectId;
 	nextProjectId = (parseInt(id) == projects.length-1) ? 0 : parseInt(id)+1;
 	return nextProjectId;
-
 }
 
 var router = function() {

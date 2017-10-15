@@ -248,6 +248,8 @@ nav a {
 .summary {
   margin-top: 32px;
   font-size: 1.4rem; }
+  .summary p {
+    margin-bottom: 0; }
 
 @media (max-width: 576px) {
   .header {
@@ -335,7 +337,6 @@ nav a {
   font-size: 1.6rem;
   margin-bottom: 4px; }
 .project-summary hr {
-  width: 100%;
   margin: 64px 0 12px; }
 .project-summary a {
   cursor: pointer; }

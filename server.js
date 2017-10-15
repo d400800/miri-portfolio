@@ -11,11 +11,10 @@ var app = express();
 var projectsRouter = require(path.join(__dirname, './src/routes/projectsRouter'))();
 var adminRouter = require(path.join(__dirname, './src/routes/adminRouter'))();
 
-app.use(express.static(path.join(__dirname, './dist')));
 app.set('views', path.join(__dirname, './src/views'));
-
 app.set('view engine', 'ejs');
 
+app.use(express.static(path.join(__dirname, './dist')));
 app.use('/project', projectsRouter);
 app.use('/Admin', adminRouter);
 
