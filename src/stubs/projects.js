@@ -6,7 +6,7 @@ var projects = [
 		homepageSlide: "holidays/holidays-square.png",
 		summary: {
 			year: 2017,
-			myRole: "Idea, prototype development, UI/UX design"
+			myRole: "Concept, prototype development, UI/UX design"
 		},
 		introText: "<p>Explaining Holidays is a project dedicated to explaining Jewish holidays, customs and traditions to different groups of people from those who are not familiar with Jewish culture at all or have difficulties in Hebrew (olim hadashim) and therefore would find it challenging to read Tanakh, and to people who want to enrich their existing knowledge in an entertaining way.</p><p>Lots of people in Israel have questions about Jewish customs and traditions or sometimes they just need to explain to their children where a holiday came from. Explaining Holidays is a website that allows to find answers and explanations written in a simple language, with pictures and videos.</p>",
 		sliders: [
@@ -37,7 +37,7 @@ var projects = [
 				sliderClass: "website-design-slider",
 				slides: [
 					{
-						imgTitle: "holidays on screen",
+						imgTitle: "Holidays on screen",
 						src: "holidays/holidays-on-screen.png"
 					},
 					{
@@ -65,7 +65,7 @@ var projects = [
 			myRole: "branding, web design",
 			webDevelopment: "Benjamin Mordukhovich"
 		},
-		introText: "<p><a href='http://www.benjamin400800.com/rollingbrew' target='_blank' title='Rolling Brew website'>Rolling Brew</a> – is a concept of a tea shop which main goal is to shine the light on the amazing diversity of tea. Here customers can have a great time with a cup of tea and a dessert.</p><p>Rolling Brew website offers for tea lovers a choice of highest quality teas & desserts made with the best ingredients.</p>",
+		introText: "<p><a href='http://www.benjamin400800.com/rollingbrew' target='_blank' title='Rolling Brew website'>Rolling Brew</a> – is a concept of a tea shop which main goal is to shine the light on the amazing diversity of tea. Here customers can have a great time with a cup of tea and a dessert.</p><p>Rolling Brew website offers for tea lovers a choice of highest quality teas & desserts made from the best ingredients.</p>",
 		sliders: [
 			{
 				sliderHeading: "Branding and typography",
@@ -76,19 +76,19 @@ var projects = [
 						src: "rolling_brew/rb-branding.png"
 					},
 					{
-						imgTitle: "typography",
+						imgTitle: "Typography",
 						src: "rolling_brew/rb-typography.png"
 					},
 					{
-						imgTitle: "colors",
+						imgTitle: "Colors",
 						src: "rolling_brew/rb-colors.png"
 					},
 					{
-						imgTitle: "icons",
+						imgTitle: "Icons",
 						src: "rolling_brew/rb-icons.png"
 					},
 					{
-						imgTitle: "mockup - paper cups",
+						imgTitle: "Mockup - paper cups",
 						src: "rolling_brew/rb-cup.png"
 					}
 				]
@@ -132,15 +132,15 @@ var projects = [
 				sliderClass: "branding-slider",
 				slides: [
 					{
-						imgTitle: "rhino bar logo variations",
+						imgTitle: "Rhino bar logo variations",
 						src: "rhino/rhino-branding.png"
 					},
 					{
-						imgTitle: "typography",
+						imgTitle: "Typography",
 						src: "rhino/rhino-typography2.png"
 					},
 					{
-						imgTitle: "typography",
+						imgTitle: "Typography",
 						src: "rhino/rhino-typography.png"
 					}
 				]
@@ -150,11 +150,11 @@ var projects = [
 				sliderClass: "website-design-slider",
 				slides: [
 					{
-						imgTitle: "business cards for Rhino",
+						imgTitle: "Business cards for Rhino",
 						src: "rhino/rhino-bc.png"
 					},
 					{
-						imgTitle: "business cards for Rhino",
+						imgTitle: "Business cards for Rhino",
 						src: "rhino/rhino-bc2.png"
 					},
 					{
@@ -188,11 +188,11 @@ var projects = [
 						src: "galla/galla-logo.png"
 					},
 					{
-						imgTitle: "typography",
+						imgTitle: "Typography",
 						src: "galla/galla-typography.png"
 					},
 					{
-						imgTitle: "colors",
+						imgTitle: "Colors",
 						src: "galla/galla-colors.png"
 					}
 				]
@@ -202,15 +202,15 @@ var projects = [
 				sliderClass: "website-design-slider",
 				slides: [
 					{
-						imgTitle: "homepage",
+						imgTitle: "Homepage",
 						src: "galla/galla-home-1920-1.png"
 					},
 					{
-						imgTitle: "homepage",
+						imgTitle: "Homepage",
 						src: "galla/galla-home-1920-2.png"
 					},
 					{
-						imgTitle: "homepage",
+						imgTitle: "Homepage",
 						src: "galla/galla-home-1920-3.png"
 					},
 					{
@@ -218,19 +218,19 @@ var projects = [
 						src: "galla/galla-mobile-1.png"
 					},
 					{
-						imgTitle: "category page - jewelry",
+						imgTitle: "Category page - jewelry",
 						src: "galla/galla-categories-1920-1.png"
 					},
 					{
-						imgTitle: "mockup - category page - jewelry",
+						imgTitle: "Mockup - category page - jewelry",
 						src: "galla/galla-categories-1920-2.png"
 					},
 					{
-						imgTitle: "product page - desktop & mobile",
+						imgTitle: "Product page - desktop & mobile",
 						src: "galla/galla-product-page.png"
 					},
 					{
-						imgTitle: "shopping cart",
+						imgTitle: "Shopping cart",
 						src: "galla/galla-shopping-cart.png"
 					}
 				]

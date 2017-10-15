@@ -98,7 +98,6 @@
 
 	$(document).ready(function() {
 		if($(".homepage").length > 0) {
-			console.log("lalal");
 			var homepageSlider = new Carousel($(".carousel-slider-wrapper"), 1000);
 		}
 		if($(".inner-page").length > 0) {
