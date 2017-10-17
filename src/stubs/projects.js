@@ -3,7 +3,10 @@ var projects = [
 		banner: "holidays/holidays-banner.png",
 		heading: "holidays",
 		headingHebrew: "מסבירים חגים",
-		homepageSlide: "holidays/holidays-square.png",
+		homepageSlide: {
+			image: "holidays/holidays-square.png",
+			title: "Concept, website design"
+		},
 		summary: {
 			year: 2017,
 			myRole: "Concept, prototype development, UI/UX design"
@@ -59,7 +62,10 @@ var projects = [
 	{
 		banner: "rolling_brew/rb-banner.png",
 		heading: "rolling brew",
-		homepageSlide: "rolling_brew/rb-square.png",
+		homepageSlide: {
+			image: "rolling_brew/rb-square.png",
+			title: "Branding, website design"
+		},
 		summary: {
 			year: 2017,
 			myRole: "branding, web design",
@@ -120,7 +126,10 @@ var projects = [
 	{
 		banner: "rhino/rhino-banner.png",
 		heading: "rhino bar",
-		homepageSlide: "rhino/rhino-square.png",
+		homepageSlide: {
+			image: "rhino/rhino-square.png",
+			title: "Branding, graphic design"
+		},
 		summary: {
 			year: 2017,
 			myRole: "branding, graphic design"
@@ -172,7 +181,10 @@ var projects = [
 	{
 		banner: "galla/galla-banner.png",
 		heading: "galla",
-		homepageSlide: "galla/galla-square.png",
+		homepageSlide: {
+			image: "galla/galla-square.png",
+			title: "Branding, website and mobile app design"
+		},
 		summary: {
 			year: 2017,
 			myRole: "branding, web design"

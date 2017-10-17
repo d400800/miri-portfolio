@@ -59,6 +59,9 @@ ul {
 .inner-page .menu {
   display: none; }
 
+.email-address {
+  color: #333; }
+
 @media (max-width: 1024px) {
   h2 {
     font-size: 4rem; } }

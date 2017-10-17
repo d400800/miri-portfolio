@@ -59,7 +59,8 @@
 						<% projects.forEach(function(project, index) { %>
 							<li>
 								<a href="/project/<%=index%>" title="<%=project.heading %>">
-									<img src="/img/<%=project.homepageSlide %>" alt="<%=project.heading %>" title="<%=project.heading %>">
+									<img src="/img/<%=project.homepageSlide.image %>" alt="<%=project.heading %>" title="<%=project.heading %>">
+									<strong><%=project.homepageSlide.title %></strong>
 								</a>
 							</li>
 						<%})%>
@@ -99,7 +100,7 @@
 				
 				<hr>
 
-				<p>Email: <strong>vorobyova.mariya17@gmail.com</strong></p>
+				<p>Email: <strong><a class="email-address" href="mailto:miri220594@gmail.com">miri220594@gmail.com</a></strong></p>
 			</div>
 		</div>
 	</section>

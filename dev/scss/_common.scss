@@ -65,6 +65,10 @@ ul {
 	display: none;
 }
 
+.email-address {
+	color: $black;
+}
+
 @media(max-width: 1024px) {
 	h2 {
 		font-size: 4rem;
