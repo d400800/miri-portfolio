@@ -80,15 +80,6 @@
 			background-size: cover;
 			
 		}
-		.carousel-navigation {
-			padding-right: 20px;
-			-ms-flex-pack: justify;
-	    		justify-content: space-between;
-		}
-		.carousel-slider-wrapper .carousel-slider li strong {
-			left: 0;
-			@include css3-prefix(transform, translateX(0));
-		}
 	}
 	.project-desc {
 		hr {

@@ -27,6 +27,11 @@
 				font-size: 1.5rem;
 				display: inline-block;
 				@include css3-prefix(transform, translateX(-50%));
+
+				@media(max-width: 576px) {
+					left: 0;
+					@include css3-prefix(transform, translateX(0));
+				}
 			}
 		}
 		img {
@@ -77,8 +82,7 @@
 
     @media(max-width: 576px) {
     	margin-top: 5%;
-    	-ms-flex-pack: center;
-    		justify-content: center;
+    	padding-right: 20px;
     }
 }
 
