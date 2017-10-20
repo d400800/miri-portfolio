@@ -8,7 +8,6 @@
 		flex-wrap: no-wrap;
 		list-style: none;
 		white-space: nowrap;
-		@include css3-prefix(transition, all 1s);
 		@include css3-prefix(transform, translateX(0));
 
 		li {

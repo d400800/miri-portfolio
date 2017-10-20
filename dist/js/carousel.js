@@ -9,16 +9,16 @@
 		navContainer: 'carousel-navigation'
 	}
 
-	function Carousel(carousel, transitionTime) {
-		this.carousel = carousel.find("."+CLASSES.carouselSlider);
+	function Carousel(parameters) {
+		this.carousel = parameters.element.find("."+CLASSES.carouselSlider);
 		this.slides = this.carousel.find("li");
-		this.carouselArrow = carousel.find("."+CLASSES.arrow);
-		this.arrowRight = carousel.find("."+CLASSES.arrowRight);
-		this.arrowLeft = carousel.find("."+CLASSES.arrowLeft);
-		this.navContainer = carousel.find("."+CLASSES.navContainer);
-		this.transitionTime = transitionTime;
+		this.carouselArrow = parameters.element.find("."+CLASSES.arrow);
+		this.arrowRight = parameters.element.find("."+CLASSES.arrowRight);
+		this.arrowLeft = parameters.element.find("."+CLASSES.arrowLeft);
+		this.navContainer = parameters.element.find("."+CLASSES.navContainer);
+		this.transitionTime = parameters.transitionTime;
 		
-		this.carouselWrapperWidth = carousel.outerWidth();
+		this.carouselWrapperWidth = parameters.element.outerWidth();
 
 		this.slides.css('width', this.carouselWrapperWidth+'px');
 		this.navContainer.css('width', this.carouselWrapperWidth+'px');
@@ -30,6 +30,7 @@
 		this.isMoving = false;
 
 		this.carousel.css('width', this.carouselWidth+'px');
+		this.carousel.css('transition', "all "+this.transitionTime+"ms");
 		
 		this.bindEvents();
 	}
@@ -65,13 +66,13 @@
 		    	
 		    	console.log(newPos);
 
-		    	if(newPos == -(self.carouselWidth-self.movingDistance)) {
+		    	if(Math.abs(newPos) == Math.abs(self.carouselWidth-self.movingDistance)) {
 		    		self.arrowRight.addClass(CLASSES.disabled);
-		    	} else if(newPos < 0 && newPos > -(self.carouselWidth-self.movingDistance)) {
+		    	} else if(newPos == 0) {
+		    		self.arrowLeft.addClass(CLASSES.disabled);
+		    	} else {
 		    		self.arrowRight.removeClass(CLASSES.disabled);
 		    		self.arrowLeft.removeClass(CLASSES.disabled);
-		    	} else {
-		    		self.arrowLeft.addClass(CLASSES.disabled);
 		    	}
 
 				self.carousel.animate({ textIndent: 0 }, {
@@ -98,11 +99,23 @@
 
 	$(document).ready(function() {
 		if($(".homepage").length > 0) {
-			var homepageSlider = new Carousel($(".carousel-slider-wrapper"), 1000);
+			new Carousel({
+					"element": $(".carousel-slider-wrapper"),
+					"transitionTime": 1000
+				}
+			);
 		}
 		if($(".inner-page").length > 0) {
-			var brandingSlider = new Carousel($(".branding-slider"), 650);
-			var brandingSlider = new Carousel($(".website-design-slider"), 650);
+			
+			var innerPageSliders = $('.carousel-slider-wrapper');
+			
+			$.each(innerPageSliders, function(index, slider) {
+				new Carousel({
+						"element": $(slider),
+						"transitionTime": 650
+					}
+				);
+			});
 		}
 	})
 
