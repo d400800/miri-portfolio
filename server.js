@@ -15,12 +15,17 @@ app.set('views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, './dist')));
+app.use(express.static(path.join(__dirname, './src/staticViews')));
 app.use('/project', projectsRouter);
 app.use('/Admin', adminRouter);
 
 app.get('/', function(req, res) {
 	res.render("index", {projects: projects});
-})
+});
+
+app.get('/dashboard', function(req, res) {
+	res.render("dashboard", {});
+});
 
 app.listen(port, function(err) {
 	console.log("Starting on port "+port);
