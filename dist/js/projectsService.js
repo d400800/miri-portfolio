@@ -4,11 +4,15 @@
 	var projectsService = function($http) {
 		
 		var getAllProjects = function() {
-			return $http.get('http://localhost:5000/admin/getProjects');
+			return $http.get('http://localhost:5000/api/getProjects');
 		}
 
 		return {
 			getAllProjects: getAllProjects
+		}
+
+		var postProject = function() {
+			$http.post('/http://localhost:5000/api/postProject', data);
 		}
 	}
 
