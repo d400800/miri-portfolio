@@ -1,8 +1,8 @@
 var app = angular.module('projectsDashboard',[]);
 
 app.controller('dashboardAppController',
-	['$scope', '$http', 'Project', 'projectsService',
-	function($scope, $http, Project, projectsService) {
+	['$scope', 'projectFactory', 'projectsService',
+	function($scope, Project, projectsService) {
 	
  	$scope.title = 'List of projects';
  	$scope.projects = [];
@@ -17,7 +17,7 @@ app.controller('dashboardAppController',
 
 }]);
 
-app.factory('Project', function() {
+var projectFactory = function () {
 	var Project = function(data) {
 		for(var k in data) {
 			this[k] = data[k];
@@ -31,4 +31,6 @@ app.factory('Project', function() {
 	}
 
 	return Project;
-})
+}
+
+app.factory('projectFactory', projectFactory);

@@ -1,7 +1,7 @@
 (function (){
 	var app = angular.module('projectsDashboard');
 
-	var projectsService = function($http) {
+	app.service('projectsService', ['$http', function($http) {
 		
 		var getAllProjects = function() {
 			return $http.get('http://localhost:5000/api/getProjects');
@@ -14,7 +14,5 @@
 		var postProject = function() {
 			$http.post('/http://localhost:5000/api/postProject', data);
 		}
-	}
-
-	app.service('projectsService', projectsService);
+	}]);
 }())

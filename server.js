@@ -23,6 +23,11 @@ app.use('/project', projectsRouter);
 app.use('/api', adminRouter);
 
 app.get('/', function(req, res) {
+	var ip = (req.headers['x-forwarded-for'] ||
+     req.connection.remoteAddress ||
+     req.socket.remoteAddress ||
+     req.connection.socket.remoteAddress);
+	console.log(ip);
 	res.render("index", {projects: projects});
 });
 
