@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+var mongodb = require('mongodb').MongoClient;
 
 var config = require(path.join(__dirname, './config'));
 var projects = require(path.join(__dirname, './src/stubs/projects'));
@@ -27,7 +28,16 @@ app.get('/', function(req, res) {
      req.connection.remoteAddress ||
      req.socket.remoteAddress ||
      req.connection.socket.remoteAddress).split(",")[0];
-	console.log(ip);
+
+	var url = 'mongodb://localhost:27017/visitors';
+	mongodb.connect(url, function(err, db) {
+		var collection = db.collection('statistics');
+		collection.insertOne({"ip": ip, "date": new Date()}, function (err, results) {
+			if (err) throw err;
+		    db.close();
+		});
+	});
+
 	res.render("index", {projects: projects});
 });
 
