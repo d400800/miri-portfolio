@@ -4,7 +4,7 @@ app.controller('websiteStatisticsController',
 	['$scope', 'statisticsFactory', 'statisticsService',
 	function($scope, statisticsFactory, statisticsService) {
 	
-	const isDev = true;
+	const isDev = false;
 	
 	function removeDuplicatesBy(keyFn, array) {
 		var mySet = new Set();
