@@ -193,9 +193,10 @@ var statisticsStub = [
 ];
 
 app.service('statisticsService', ['$http', function($http) {
+	const apiUrl = "http://mirilyu.com/statistics";
 		
 	var getAllVisitors = function() {
-		return $http.get('http://localhost:5000/api/getStatistics');
+		return $http.get(apiUrl);
 	}
 
 	var getAllVisitors_stub = function() {
