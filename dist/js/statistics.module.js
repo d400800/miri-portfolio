@@ -26,6 +26,8 @@ app.controller('websiteStatisticsController',
 	 			var visitor = new statisticsFactory(data);
 	 			$scope.statistics.visitors.push(visitor);
 	 		})
+			$scope.statistics.uniqueVisitors = removeDuplicatesBy(x => x.formattedIp, $scope.statistics.visitors);
+			console.log($scope.statistics.uniqueVisitors);
 	 		console.log($scope.statistics.visitors);
 	 	});
 	 } else {
@@ -37,8 +39,6 @@ app.controller('websiteStatisticsController',
 	 	//console.log($scope.statistics.visitors);
 	 }
 
-	$scope.statistics.uniqueVisitors = removeDuplicatesBy(x => x.formattedIp, $scope.statistics.visitors);
-	console.log($scope.statistics.uniqueVisitors);
 
 }]);
 
