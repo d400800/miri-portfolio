@@ -45,6 +45,10 @@ app.get('/dashboard', function(req, res) {
 	res.render("dashboard", {});
 });
 
+app.get('/statistics', function(req, res) {
+	res.render("statistics", {});
+});
+
 app.listen(port, function(err) {
 	console.log("Starting on port "+port);
 });
