@@ -26,8 +26,8 @@ var router = function () {
 					else {
 						res.send(results);
 					}
+					db.close();
 				});
-				db.close();
 			});
 		});
 		adminRouter.route('/getProjects')
