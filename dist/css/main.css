@@ -356,5 +356,9 @@ nav a {
     margin-top: 32px; }
   .project-desc h2 {
     margin-bottom: 42px; } }
+.website-statistics-page h6 {
+  margin-bottom: 16px; }
+.website-statistics-page p {
+  font-size: 1.4rem; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,7 @@ app.controller('websiteStatisticsController',
 	function($scope, statisticsFactory, statisticsService) {
 	
 	const isDev = false;
+	const dateObj = new Date(); 
 	
 	function removeDuplicatesBy(keyFn, array) {
 		var mySet = new Set();
@@ -15,10 +16,43 @@ app.controller('websiteStatisticsController',
 		});
 	};
 
+	function getVisitorsByDay(type, value, array) {
+		switch(type) {
+		    case "day":
+				return array.filter(visitorObj => visitorObj.date.substring(0, 10) == value);
+		        break;
+		    case "month":
+		        return array.filter(visitorObj => visitorObj.date.substring(0, 7) == value);
+		        break;
+		    case "year":
+		        return array.filter(visitorObj => visitorObj.date.substring(0, 4) == value);
+		        break;
+		    default:
+		        return array.filter(visitorObj => visitorObj.date.substring(0, 10) == value);
+		}
+	}
+
+	function getFormattedDate(requiredDay = 0) {
+		var date = new Date();
+		var dd = date.getDate();
+		var mm = date.getMonth()+1; //January is 0!
+		var yyyy = date.getFullYear();
+
+		if(dd<10){
+		    dd='0'+dd;
+		} 
+		if(mm<10){
+		    mm='0'+mm;
+		}
+
+		return yyyy+'-'+mm+'-'+dd;
+	}
+
 	$scope.statistics = {};
  	$scope.statistics.title = 'Website statistics';
  	$scope.statistics.visitors = [];
  	$scope.statistics.uniqueVisitors = [];
+ 	$scope.statistics.todaysVisitors = [];
 
  	if(!isDev) {
 	 	statisticsService.getAllVisitors().then(function(response) {
@@ -26,18 +60,23 @@ app.controller('websiteStatisticsController',
 	 			var visitor = new statisticsFactory(data);
 	 			$scope.statistics.visitors.push(visitor);
 	 		})
+			
 			$scope.statistics.uniqueVisitors = removeDuplicatesBy(x => x.formattedIp, $scope.statistics.visitors);
-			console.log($scope.statistics.uniqueVisitors);
-	 		console.log($scope.statistics.visitors);
+			
+			$scope.statistics.todaysVisitors = getVisitorsByDay('day', getFormattedDate(), $scope.statistics.visitors);
+	 		$scope.statistics.todaysUniqueVisitors = removeDuplicatesBy(x => x.formattedIp, $scope.statistics.todaysVisitors);
+
+	 		//console.log($scope.statistics.visitors);
+	 		console.log($scope.statistics.todaysVisitors);
 	 	});
-	 } else {
+	} else {
 	 	var visitorsStub = statisticsService.getAllVisitors_stub();
 	 	visitorsStub.forEach(function(data) {
 	 		var visitor = new statisticsFactory(data);
 	 		$scope.statistics.visitors.push(visitor);
 	 	});
 	 	//console.log($scope.statistics.visitors);
-	 }
+	}
 
 
 }]);

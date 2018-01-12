@@ -17,21 +17,34 @@
 	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/main.css">
 	
 	<script src="/js/angular.js"></script>
 	<script src="/js/statistics.module.js"></script>
 </head>
 
-<body class="inner-page" ng-app="websiteStatistics">
-	<section class="container" ng-controller="websiteStatisticsController">
-		<h2 class="text-center mt-4 mb-4">{{statistics.title}}</h2>
-
-		<p>
-			<span>Total visits: </span><b>{{statistics.visitors.length}}</b>
-		</p>
-		<p>
-			<span>Unique ip's: </span><b>{{statistics.uniqueVisitors.length}}</b>
-		</p>
+<body class="inner-page website-statistics-page" ng-app="websiteStatistics">
+	<section class="container about-section" ng-controller="websiteStatisticsController">
+		<h1 class="text-center mt-4 mb-4">{{statistics.title}}</h2>
+		<div>
+			<h6>Total</h6>
+			<p>
+				<span>Visits: </span><b>{{statistics.visitors.length}}</b>
+			</p>
+			<p>
+				<span>Unique ip's: </span><b>{{statistics.uniqueVisitors.length}}</b>
+			</p>
+		</div>
+		<hr>
+		<div>
+			<h6>Today</h6>
+			<p>
+				<span>Visits: </span><b>{{statistics.todaysVisitors.length}}</b>
+			</p>
+			<p>
+				<span>Unique ip's: </span><b>{{statistics.todaysUniqueVisitors.length}}</b>
+			</p>
+		</div>
 	</section>
 </body>
 
