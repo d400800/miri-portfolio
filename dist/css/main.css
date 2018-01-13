@@ -41,6 +41,9 @@ h4 {
 ul {
   margin: 0; }
 
+.margin-r-auto {
+  margin-right: auto; }
+
 .hebrew {
   font-family: 'Heebo', sans-serif; }
 
@@ -360,5 +363,16 @@ nav a {
   margin-bottom: 16px; }
 .website-statistics-page p {
   font-size: 1.4rem; }
+
+statistics-block ul {
+  overflow: auto;
+  margin: 12px 0;
+  max-height: 224px; }
+statistics-block li {
+  font-size: 1.4rem;
+  margin: 0 0 4px 32px; }
+statistics-block button {
+  cursor: pointer;
+  margin-left: 12px; }
 
 /*# sourceMappingURL=main.css.map */

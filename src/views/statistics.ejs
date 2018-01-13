@@ -20,34 +20,25 @@
 	<link rel="stylesheet" href="/css/main.css">
 	
 	<script src="/js/angular.js"></script>
-	<script src="/js/statisticsModule/statistics.module.js"></script>
-	<script src="/js/statisticsModule/statistics.service.js"></script>
+	<script src="/js/statisticsModule/statistics.controller.js"></script>
 	<script src="/js/statisticsModule/statistics.factory.js"></script>
 	<script src="/js/functions.factory.js"></script>
+	<script src="/js/statisticsModule/statisticsBlock.component.js"></script>
 </head>
 
 <body class="inner-page website-statistics-page" ng-app="websiteStatistics">
-	<section class="container about-section" ng-controller="websiteStatisticsController">
-		<h1 class="text-center mt-4 mb-4">{{statistics.title}}</h2>
-		<div>
-			<h6>Total</h6>
-			<p>
-				<span>Visits: </span><b>{{statistics.visitors.length}}</b>
-			</p>
-			<p>
-				<span>Unique ip's: </span><b>{{statistics.uniqueVisitors.length}}</b>
-			</p>
+	<section class="container about-section" ng-controller="websiteStatisticsController as ctrl">
+		<h1 class="text-center mt-4 mb-4">{{ctrl.title}}</h2>
+		
+		<div class="row">
+			<div class="col-5 margin-r-auto">
+				<statistics-block visitors="ctrl.visitors"></statistics-block>
+			</div>
+			<div class="col-5">
+				<statistics-block visitors="ctrl.todaysVisitors"></statistics-block>
+			</div>
 		</div>
-		<hr>
-		<div>
-			<h6>Today</h6>
-			<p>
-				<span>Visits: </span><b>{{statistics.todaysVisitors.length}}</b>
-			</p>
-			<p>
-				<span>Unique ip's: </span><b>{{statistics.todaysUniqueVisitors.length}}</b>
-			</p>
-		</div>
+		
 	</section>
 </body>
 

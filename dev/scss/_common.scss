@@ -42,6 +42,9 @@ h4 {
 ul {
 	margin: 0;
 }
+.margin-r-auto {
+	margin-right: auto;
+}
 .hebrew {
 	font-family: 'Heebo', sans-serif;
 }
@@ -74,8 +77,6 @@ ul {
 		font-size: 4rem;
 	}
 }
-
-
 
 @media(max-width: 576px) {
 	html {

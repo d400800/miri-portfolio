@@ -1,0 +1,19 @@
+<div>
+	<h6>{{$ctrl.visitors.title}}</h6>
+	<p>
+		<span>Visitors: </span><b>{{$ctrl.visitors.total.length}}</b>
+	</p>
+	<p>
+		<span>Unique visitors: </span>
+		<b>{{$ctrl.visitors.unique.length}}</b>
+		<button type="button" class="btn-outline-dark" ng-click="$ctrl.toggleTree();">
+			<span ng-if="!$ctrl.treeToggled">+</span>
+			<span ng-if="$ctrl.treeToggled">-</span>
+		</button>
+	</p>
+	<ul ng-if="$ctrl.treeToggled">
+		<li ng-repeat="item in $ctrl.visitors.unique">
+			<span>{{item.formattedIp}}</span>
+		</li>
+	</ul>
+</div>

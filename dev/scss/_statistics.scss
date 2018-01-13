@@ -6,3 +6,21 @@
 		font-size: 1.4rem;
 	}
 }
+
+statistics-block {
+	ul {
+		overflow: auto;
+		margin: 12px 0;
+		max-height: 224px;
+	}
+
+	li {
+		font-size: 1.4rem;
+		margin: 0 0 4px 32px;
+	}
+
+	button {
+		cursor: pointer;
+		margin-left: 12px;
+	}
+}
