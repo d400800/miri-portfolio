@@ -18,36 +18,36 @@
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body class="homepage">
 	
-	<section class="container header">
+	<header class="container header header__homepage">
 		<div class="row align-items-center">
-			<div class="logo-wrapper col-2 col-sm-2">
-				<a href="/" class="site-logo" title="homepage">
-					<img src="/img/logo.png" alt="logo">
-				</a>
-			</div>
+			<a href="/" class="logo logo__header" title="homepage">
+				<img class="logo__img" src="/img/logo.png" alt="logo">
+			</a>
 			<div class="menu col-8 col-sm-4 ml-auto">
-				<nav class="navigation nav flex-row-reverse">
-					<a href="#" class="link-about" onclick="$('.about-section').animatescroll({scrollSpeed:1250});">About</a>
-					<a href="#" class="link-projects" onclick="$('.works-section').animatescroll({scrollSpeed:600});">Projects</a>
+				<nav class="header__navigation flex-row-reverse">
+					<a href="#" class="header__menu-link header__menu-link--about"
+					   onclick="$('.about-section').animatescroll({scrollSpeed:1250});">About</a>
+					<a href="#" class="header__menu-link header__menu-link--projects"
+					   onclick="$('.works-section').animatescroll({scrollSpeed:600});">Projects</a>
 				</nav>
 			</div>
 		</div>
 
-		<hr>
+		<hr class="separator m-t-40 separator--short">
 
-		<div class="summary">
-			<p>Hello there! My name is <strong>Miriam</strong> and I am a digital designer.</p>
-			<p>Welcome to my portfolio.</p>
+		<div class="header__summary">
+			<p class="header__summary-text">Hello there! My name is <strong>Miriam</strong> and I am a digital designer.</p>
+			<p class="header__summary-text">Welcome to my portfolio.</p>
 		</div>
-
-	</section>
+	</header>
 
 	<section class="works-section container">
 		<div class="row">
 			<div class="col-12 col-sm-4 works-title-col">
-				<hr>
+				<hr class="separator m-b-40 separator--short">
 				<h2>PROJECTS</h2>
 			</div>
 
@@ -81,14 +81,13 @@
 				</div>
 
 			</div>
-
 		</div>
 	</section>
 
 	<section class="about-section container">
 		<div class="row">
 			<div class="col-12 col-sm-4">
-				<hr>
+				<hr class="separator m-b-40 separator--short">
 				<h2>ABOUT</h2>
 			</div>
 			<div class="col-12 col-sm-8 about-content">

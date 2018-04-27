@@ -10,12 +10,15 @@ body {
 	padding-bottom: 72px;
 	font-family: 'Roboto', sans-serif;
 }
-hr {
+.separator {
     border: 0;
     padding: 0;
-	width: 64px;
-    margin: 40px 0 0;
+    margin-left: 0;
+    margin-right: 0;
     border-bottom: 8px solid $lightgray;
+}
+.separator--short {
+	width: 64px;
 }
 strong {
 	color: $black;
